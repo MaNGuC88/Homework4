@@ -1,19 +1,25 @@
 package com.geektech;
 
 public class Hero {
+    private String name;
     private int health;
     private int damage;
     private String superPower;
 
-    public Hero(int health, int damage, String superPower) {
+
+    public Hero(String name, int health, int damage, String superPower) {
+        this.name = name;
         this.health = health;
         this.damage = damage;
         this.superPower = superPower;
+
     }
 
-    public Hero(int health, int damage) {
+    public Hero(String name, int health, int damage) {
+        this.name = name;
         this.health = health;
         this.damage = damage;
+
     }
 
     public int getHealth() {
@@ -26,5 +32,9 @@ public class Hero {
 
     public String getSuperPower() {
         return superPower;
+    }
+
+    public String getName() {
+        return name;
     }
 }
